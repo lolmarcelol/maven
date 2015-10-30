@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ProdutoControlador {
     
-    
+   @RequestMapping("/produto") 
     public ModelAndView obterProduto(){
         ModelAndView mav;
         mav = new ModelAndView("listar-produtos");
