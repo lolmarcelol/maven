@@ -1,0 +1,13 @@
+package controladores;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HelloWordControlador {
+    
+    @RequestMapping("/ola")
+    public String cumprimentar(){
+        return "olamundo";
+    }
+}
